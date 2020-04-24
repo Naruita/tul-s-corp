@@ -35,7 +35,7 @@ def dayexe():
     print('\n"WHAT"\n')
     print("It's Tul's corp.... they replied positively to your application.")
     print("You look at the other two and think about which one you're going to open first.")
-    print("1. Tul's Corp\n2. Dat Tech\n3. VJB Enterprises")
+    print("1. Tul's Corp\n2. Dat Tech\n3. Balaji Enterprises")
     print("You go through all the responses.")
     tulsresp()
     datresp()
@@ -49,10 +49,14 @@ def dayexe():
             print("Enter the name of the company")
         elif resp.lower()[0] is 't':
             print("You decide to take the interview of the largest in the game.\nTul's Corp.")
+            intern = [1, 0, 0]
         elif resp.lower()[0] is 'd':
             print("You decide that Dat Tech really has the future in it's hold, being a rival to Tul's Corp.\nIt doesn't fall short of a dream company.")
+            intern = [0, 1, 0]
         else:
-            print("You decide that the other two just aren't your style. ")
+            print("You decide that the other two just aren't your style.")
+            print("Maybe, a start up would be the way to go.")
+            intern = [0, 0, 1]
 
 def tulsresp():
     print()

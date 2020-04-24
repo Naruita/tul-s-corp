@@ -19,7 +19,7 @@ def dayexe(path):
           " and realise that you're already pretty much out of money."
           "\nA motel seems to be a better option."
           " You decide to flip for it, and toss a coin into the air.")
-    res = input("\n\n> Do you get a heads or a tails?")
+    res = input("\n\n> Do you get a heads or a tails? ")
 
     stay_at_hotel = False
     if res.lower()[0] == 'h':
@@ -43,11 +43,13 @@ def dayexe(path):
     print("Approaching your way, comes a yellow coloured cab."
           "You get in quickly in order to avoid the rain.")
     print('\nCab Driver: "Where to?"')
+    sleep(5)
     if stay_at_hotel:
         print("> Botanical View")
     else:
         print("> Just get me to a motel not far from town.")
     print()
+    sleep(4)
     print('Cab Driver: "Gotcha."')
 
     print("-" * 20)
@@ -115,6 +117,7 @@ def dayexe(path):
 def load_data(path):
     stats = open(path, 'rb')
     db = pickle.load(stats)
+
     for name in db:
         print(name, '=>', stats)
     stats.close()
