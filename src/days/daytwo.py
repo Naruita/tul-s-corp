@@ -1,6 +1,5 @@
 import pickle
 import time
-import dayone
 #Need to add the alert of having the day two appear
 def dayexe():
     if(dayone.stay_at_hotel):

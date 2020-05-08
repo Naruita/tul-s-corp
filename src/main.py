@@ -2,7 +2,7 @@ import sys
 import os
 import time
 import pickle
-import dayone
+import days
 # We have a title screen that the player will reach before the actual game begins.
 
 
